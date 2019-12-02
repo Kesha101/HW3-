@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.mainContainer {
+    height: 100vh;
+    background-image: url("./img/background@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.centerContainer {
+    width: 1074px;
+    position: absolute;
+    top: 50px;
+    left: calc((100% - 1070px) / 2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logoContainer {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoContainer:hover .logoTxt{
+    color: #f26522;
+}
+
+.logoContainer:hover .logoWhite {
+    width: 46px; 
+    height: 44px; 
+    background-position: -2px -46px;
+}
+
+.logoWhite, .logoOrange { 
+    display: inline-block; 
+    background: url('./img/logos.png') no-repeat; 
+    overflow: hidden;
+}
+ 
+.logoWhite { 
+    width: 46px; 
+    height: 44px; 
+    background-position: -2px -0px; 
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+
+.logoImg {
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+.logoTxtContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logoTxt {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logoTxt:first-child {
+    font-size: 25px;
+}
+
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contactUsTxt {
+    margin: 0;
+    font-size: 14px;
+    text-align: end;
+}
+
+.cardsContainer {
+    height: 600px;
+}
+
+.cardsContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 245px;
+    margin-right: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover .cardDescription {
+    color: #f26522;
+}
+
+.card:hover .priceContainer {
+    width: 312px;
+    padding: 0 20px;
+    cursor: pointer; 
+}
+
+.card:nth-child(3), .card:last-child {
+    margin-right: 0;
+}
+
+.cardImg {
+    border-radius: 1px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(#ffffff, transparent);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.65);
+}
+
+.cardDescription {
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.priceContainer {
+    width: 0;
+    height: 64px;
+    color: #ffffff;
+    background-color: #f26522;
+    position: absolute;
+    top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: .3s ease;
+    overflow: hidden;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.priceTxt {
+    margin: 0;
+    font-size: 12px;
+}
+
+.priceTxt:last-child {
+    font-size: 25px;
+}
+
+.viewDetailsContainer {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.viewDetailsTxt {
+    margin: 0;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.viewDetailsTxt:hover {
+    text-decoration: underline;
+}
+
+.viewDetailsContainer img {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.copyrightTxt {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
